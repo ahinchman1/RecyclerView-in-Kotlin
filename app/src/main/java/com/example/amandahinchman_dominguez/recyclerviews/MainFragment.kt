@@ -12,15 +12,15 @@ data class Movie(val title: String, val year: Int)
 
 class MainFragment : Fragment() {
 
-    private val mNicolasCageMovies = listOf(
+    private val nicCageMovies = listOf(
         Movie("Raising Arizona", 1987),
         Movie("Vampire's Kiss", 1988),
         Movie("Con Air", 1997),
-        Movie("Gone in 60 Seconds", 1997),
+        Movie("Face/Off", 1997),
         Movie("National Treasure", 2004),
         Movie("The Wicker Man", 2006),
-        Movie("Ghost Rider", 2007),
-        Movie("Knowing", 2009)
+        Movie("Bad Lieutenant", 2009),
+        Movie("Kick-Ass", 2010)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +36,7 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         list_recycler_view.apply {
             layoutManager = LinearLayoutManager(activity)
-            adapter = ListAdapter(mNicolasCageMovies)
+            adapter = ListAdapter(nicCageMovies)
         }
     }
 
