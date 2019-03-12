@@ -1,9 +1,9 @@
 package com.example.amandahinchman_dominguez.recyclerviews
 
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 
 class ListAdapter(private val list: List<Movie>)
     : RecyclerView.Adapter<MovieViewHolder>() {
